@@ -1,8 +1,8 @@
 {
-  "name": "javascript-digester",
+  "name": "onceover-atom",
   "version": "1.0.0",
-  "description": "A JavaScript readability extension for Atom",
-  "main": "digester.js",
+  "description": "OnceOver-Atom: A JavaScript readability extension for Atom",
+  "main": "onceover.js",
   "scripts": {
     "test": "test"
   },
