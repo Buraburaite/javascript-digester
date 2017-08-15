@@ -1,11 +1,18 @@
 {
-  "name": "onceover-atom",
-  "version": "1.0.0",
-  "description": "OnceOver-Atom: A JavaScript readability extension for Atom",
-  "main": "onceover.js",
-  "scripts": {
-    "test": "test"
+  "name": "onceover",
+  "main": "./lib/onceover",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "onceover:toggle"
   },
-  "author": "Javier Cueto",
-  "license": "ISC"
+  "repository": "https://github.com/atom/onceover",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
 }

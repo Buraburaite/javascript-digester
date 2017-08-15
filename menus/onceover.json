@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle onceover",
+        "command": "onceover:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "onceover",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "onceover:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
