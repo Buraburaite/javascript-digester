@@ -1,0 +1,11 @@
+{
+  "name": "javascript-digester",
+  "version": "1.0.0",
+  "description": "A JavaScript readability extension for Atom",
+  "main": "digester.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Javier Cueto",
+  "license": "ISC"
+}
