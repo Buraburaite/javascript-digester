@@ -1,14 +1,14 @@
 {
   "name": "onceover",
-  "main": "./lib/onceover",
+  "main": "./lib/onceover.js",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "OnceOver: A JavaScript readability extension for atom",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "onceover:toggle"
   },
-  "repository": "https://github.com/atom/onceover",
+  "repository": "https://github.com/Buraburaite/onceover-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
