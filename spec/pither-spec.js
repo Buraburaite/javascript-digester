@@ -1,44 +1,44 @@
 'use babel';
 
-import Onceover from '../lib/onceover';
+import Pither from '../lib/pither';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe('Onceover', () => {
+describe('Pither', () => {
   let workspaceElement, activationPromise;
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('onceover');
+    activationPromise = atom.packages.activatePackage('pither');
   });
 
-  describe('when the onceover:toggle event is triggered', () => {
+  describe('when the pither:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.onceover')).not.toExist();
+      expect(workspaceElement.querySelector('.pither')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'onceover:toggle');
+      atom.commands.dispatch(workspaceElement, 'pither:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.onceover')).toExist();
+        expect(workspaceElement.querySelector('.pither')).toExist();
 
-        let onceoverElement = workspaceElement.querySelector('.onceover');
-        expect(onceoverElement).toExist();
+        let pitherElement = workspaceElement.querySelector('.pither');
+        expect(pitherElement).toExist();
 
-        let onceoverPanel = atom.workspace.panelForItem(onceoverElement);
-        expect(onceoverPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'onceover:toggle');
-        expect(onceoverPanel.isVisible()).toBe(false);
+        let pitherPanel = atom.workspace.panelForItem(pitherElement);
+        expect(pitherPanel.isVisible()).toBe(true);
+        atom.commands.dispatch(workspaceElement, 'pither:toggle');
+        expect(pitherPanel.isVisible()).toBe(false);
       });
     });
 
@@ -51,11 +51,11 @@ describe('Onceover', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.onceover')).not.toExist();
+      expect(workspaceElement.querySelector('.pither')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'onceover:toggle');
+      atom.commands.dispatch(workspaceElement, 'pither:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,10 +63,10 @@ describe('Onceover', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let onceoverElement = workspaceElement.querySelector('.onceover');
-        expect(onceoverElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'onceover:toggle');
-        expect(onceoverElement).not.toBeVisible();
+        let pitherElement = workspaceElement.querySelector('.pither');
+        expect(pitherElement).toBeVisible();
+        atom.commands.dispatch(workspaceElement, 'pither:toggle');
+        expect(pitherElement).not.toBeVisible();
       });
     });
   });

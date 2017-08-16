@@ -1,8 +1,8 @@
 'use babel';
 
-import OnceoverView from '../lib/onceover-view';
+import PitherView from '../lib/pither-view';
 
-describe('OnceoverView', () => {
+describe('PitherView', () => {
   it('has one valid test', () => {
     expect('life').toBe('easy');
   });

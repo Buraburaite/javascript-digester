@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle onceover",
-        "command": "onceover:toggle"
+        "label": "Toggle pither",
+        "command": "pither:toggle"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "onceover",
+          "label": "pither",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "onceover:toggle"
+              "command": "pither:toggle"
             }
           ]
         }
