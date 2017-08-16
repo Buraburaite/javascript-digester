@@ -1,14 +1,14 @@
 {
-  "name": "onceover",
-  "main": "./lib/onceover.js",
+  "name": "pither",
+  "main": "./lib/pither.js",
   "version": "0.0.0",
-  "description": "OnceOver: A JavaScript readability extension for atom",
+  "description": "Pither: A JavaScript readability extension for atom",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "onceover:toggle"
+    "atom-workspace": "pither:toggle"
   },
-  "repository": "https://github.com/Buraburaite/onceover-atom",
+  "repository": "https://github.com/Buraburaite/pither-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
